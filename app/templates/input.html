@@ -1,0 +1,16 @@
+{% extends "default.html" %}
+{% block content %}
+
+
+
+<form action="/getdata" method="POST">
+    Enter First Name : <input type="text" name="fname" required><br>
+    Enter Last Name  : <input type="text" name="lname" required><br>
+    Enter Age         : <input type="number" name='age' required><br>
+    <br><br>
+    <p class="center-align">
+    <button type="submit" class="waves-effect waves-light btn-large">Submit</button>
+    </p>
+</form>
+
+{% endblock %}
